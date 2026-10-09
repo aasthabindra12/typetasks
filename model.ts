@@ -34,7 +34,3 @@ function filterByStatus(tasks: Task[], status: TaskStatus): Task[] {
 function deleteTask(tasks: Task[], id: number): Task[] {
     return tasks.filter((task) => task.id !== id);
 }
-
-function deleteTask(tasks: Task[], id: number): Task[] {
-    return tasks.filter((task) => task.id !== id);
-}
