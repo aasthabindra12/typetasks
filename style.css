@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, sans-serif;
+    background: #f4f1ff;
+    color: #25213b;
+}
+
+.wrap {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(48, 35, 100, 0.08);
+}
+
+h1 {
+    margin-bottom: 4px;
+    color: #6346c7;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #77718d;
+}
+
+.addrow {
+    display: flex;
+    gap: 8px;
+    margin: 24px 0 18px;
+}
+
+input,
+select,
+button {
+    padding: 11px;
+    border-radius: 9px;
+    font: inherit;
+}
+
+input,
+select {
+    border: 1px solid #ddd8ee;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+}
+
+button {
+    border: none;
+    background: #6346c7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4e35a8;
+}
+
+#chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+#chips button {
+    background: #eee9ff;
+    color: #5139a5;
+}
+
+#chips button.active {
+    background: #6346c7;
+    color: white;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+}
+
+li.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #e5e0f0;
+    border-radius: 11px;
+}
+
+li.task span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+li.task small {
+    color: #77718d;
+}
+
+li.task button {
+    padding: 8px;
+}
+
+@media (max-width: 520px) {
+    .wrap {
+        padding: 18px;
+    }
+
+    .addrow {
+        flex-wrap: wrap;
+    }
+
+    input {
+        flex-basis: 100%;
+    }
+}
